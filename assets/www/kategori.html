@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="js/kategori.js"></script>
+    <style type="text/css">
+        .listview-custom{
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .listview-custom a{
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" data-position="fixed">
+        <h1>Data Kategori</h1>
+    </div>
+
+        <div data-role="content">
+    
+            <div id="loading" style="display:none;text-align:center;">
+                <b>Sabar Brow...!</b>
+                <br><br>
+                <img src="loading.gif">
+            </div>
+            
+            <div id="gagal" style="display:none;text-align:center;color:#F00;">
+                <div class="alert alert-danger">
+                    <strong>Koneksi ente ngenesss broww...</strong>
+                </div>
+            </div>
+
+            <div id="tampilData" style="display:none;">
+                <ul id="dataList" data-role="listview" data-divider-theme="a">
+                </ul>
+            </div>
+        </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Data Kategori</h4>
+    </div>
+</div>
+
+</body>
+</html>
